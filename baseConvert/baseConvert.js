@@ -30,7 +30,7 @@ $.baseConvert = function(val, from, to) {
          if (from >= 63) {
             var exponent = bigInt(val.length).minus(i).minus(1);
             var height = bigInt(from).pow(exponent);
-            working = bigInt(vars64.indexOf(v)).multiply(height);
+            var mediation = bigInt(vars.indexOf(v)).multiply(height);
             working = bigInt(working).add(mediation);
             console.log(working + " = " + vars64.indexOf(v) + " * " + height + " ^ " + exponent);
          } else {
